@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //malloc kullanmak icin gerekli
 
 struct n{
     int x;
@@ -18,7 +18,7 @@ int main()
     root -> next -> next = (node *)malloc(sizeof(node));
     root -> next -> next -> x = 30;
 
-    node * iter; // sürekli next next yapmak yerine root gibi linked list içindee dolaþabilecek bir iter oluþturmak daha iyi
+    node * iter; // surekli next next yapmak yerine root gibi linked list icinde dolasabilecek bir iter olusturmak daha iyi
     iter = root;
     printf("%d\n", iter -> x);
     iter = iter -> next;
